@@ -1,7 +1,9 @@
+import Hero from "./components/Hero";
+
 function App() {
   return (
     <>
-      <h1>Portfolio Website</h1>
+      <Hero />      
     </>
   );
 }
