@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+html {
+    background-image: linear-gradient(
+        80deg,
+        #1E9AFE,
+        #60DFCD
+    );
+    background-size: 100% 1000%;
+    height: 100vh;
+    overflow-y: auto;
+}
