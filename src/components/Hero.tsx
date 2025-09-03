@@ -1,6 +1,13 @@
 import React from "react";
 
 const Hero: React.FC = () => {
+  const buttonStyle = {
+    primary:
+      "bg-green-500 text-white px-6 py-3 rounded font-medium transition-colors",
+    secondary:
+      "border-2 border-green-500 text-green-500 px-6 py-3 rounded font-medium transition-colors",
+  };
+
   const handleExternalLinkClick = (url: string) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
@@ -65,21 +72,15 @@ const Hero: React.FC = () => {
         </p>
         {/* Action Buttons */}
         <div className="flex gap-4">
-          <button
-            onClick={handleGitHubClick}
-            className="bg-green-500 text-white px-6 py-3 rounded font-medium transition-colors"
-          >
+          <button onClick={handleGitHubClick} className={buttonStyle.primary}>
             my github
           </button>
-          <button
-            onClick={handleLinkedInClick}
-            className="bg-green-500 text-white px-6 py-3 rounded font-medium transition-colors"
-          >
+          <button onClick={handleLinkedInClick} className={buttonStyle.primary}>
             my linkedin
           </button>
           <button
             onClick={handleContactClick}
-            className="border-2 border-green-500 text-green-500 px-6 py-3 rounded font-medium transition-colors"
+            className={buttonStyle.secondary}
           >
             contact me
           </button>
