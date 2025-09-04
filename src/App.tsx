@@ -1,12 +1,15 @@
+import { createRouter, RouterProvider } from "@tanstack/react-router";
 import ConstructionBanner from "./components/ConstructionBanner";
-import Hero from "./components/Hero";
 import "./index.css"
+import { routeTree } from "./routeTree.gen";
+
+const router = createRouter({ routeTree })
 
 function App() {
   return (
     <>
       <ConstructionBanner />
-      <Hero />      
+      <RouterProvider router={router} />
     </>
   );
 }
