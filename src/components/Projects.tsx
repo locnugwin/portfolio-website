@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "@tanstack/react-router";
+import Lloid from "../assets/Lloid_NH.png";
 
 const Projects: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const Projects: React.FC = () => {
         <h1 className="text-4xl font-bold text-white">hi, this is a projects page.</h1>
         <p className="text-white">
           oops, you found this page. there's nothing here yet, but feel free to come back later!
+          <img src={Lloid}/>
         </p>
       </div>
     </div>
