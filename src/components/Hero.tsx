@@ -59,6 +59,10 @@ const Hero: React.FC = () => {
         {/* Current Work */}
         <p className="text-white text-lg mb-8">
           i'm currently building at{" "}
+          <a href="https://www.bcm.io/" target="_blank" className={buttonStyle.text}>
+            beavercreek marketing
+          </a>
+          {" "}and{" "}
           <a href="https://reachtestprep.org/" target="_blank" className={buttonStyle.text}>
             reach
           </a>
