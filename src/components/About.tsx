@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "@tanstack/react-router";
-import Lloid from "../assets/Lloid_NH.png";
 
 const About: React.FC = () => {
   return (
